@@ -12,7 +12,7 @@ const translations = {
         section1: {
             tag: "About Us",
             title: "Treasures Of Hope Mission is",
-            subtitle: "Give for People",
+            subtitle: "helping people",
             description1: "Our charity was founded on March 20th 2023 in Cologne, Germany. Our vision is to help children in need and people in need to improve their lives by efficient projects, especially in East Africa.",
             description2: "We are supporting orphans and children from poor backgrounds, often we enable them to go to school to get a chance in live. We are also helping people to pay their medical costs to improve their lives. Besides this we are also supporting the old generation by buying them a small food package once a week",
             button: "More about"
@@ -28,7 +28,7 @@ const translations = {
 
         section3: {
             tag: "What we Did",
-            title: "reasures Of Hope",
+            title: "Treasures Of Hope",
             subtitle: "Projects",
             description: "Our diverse humanitarian aid projects aim at contributing to our society wellbeing and prosperity. We believe that each individual deserves to have a decent and pleasant life."
         },
@@ -132,7 +132,7 @@ const translations = {
         section1: {
             tag: "Über uns",
             title: "Die Mission von Treasures Of Hope ist",
-            subtitle: "Geben für Menschen",
+            subtitle: "Menschen im Not zu helfen",
             description1: "Unser Verein wurde am 20. März 2023 in Köln, Deutschland, gegründet. Unsere Vision ist es, Kindern in Not und Menschen in Not zu helfen, ihr Leben durch effiziente Projekte zu verbessern, insbesondere in Ostafrika.",
             description2: "Wir unterstützen Waisenkinder und Kinder aus armen Verhältnissen, oft ermöglichen wir ihnen den Schulbesuch, damit sie eine Chance im Leben bekommen. Wir helfen auch Menschen, ihre medizinischen Kosten zu bezahlen, um ihr Leben zu verbessern. Außerdem unterstützen wir auch die ältere Generation, indem wir ihnen einmal pro Woche ein kleines Lebensmittelpaket kaufen.",
             button: "Mehr über"

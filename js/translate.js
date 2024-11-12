@@ -58,7 +58,50 @@ const translations = {
 
       about: {
         title: "About Us",
-        content: "This is the about page content in English.",
+        banner: {
+          tag:"Treasures of hope",
+          title: "About",
+          subtitle: "Organization"
+        },
+        section1: {
+          tag: "About Us",
+          title:"Help is Our",
+          subtitle:"Main Goal",
+          description1:"Treasures of hope",
+          description3:"Futhermore, the association is doing other charitable work, helping Thousand People Helped old or sick people, and it supports development cooperation with Africa.",
+        },
+        section2: {
+          title:"Our Mission",
+          subtitle:"We work around the globe to save lives and defeat poverty",
+          description:"In order to help as many people as possible, we intervene in numerous fields such as: education, health, etc."
+        },
+        section3: {
+          tag: "What we Do",
+          title: "Our",
+          subtitle: "Statistics",
+          list_items: {
+            item1:"Years of Experience",
+            item2:"Countries",
+            item3:"Hundreds of People Helped",
+            item4:"Dollars We Collected"
+          }
+        },
+        team_section:{
+          tag:"Team",
+          title:"Meet",
+          subtitle:"our Team",
+          teams: {
+            team1: "Executive board",
+            team2:"Team Uganda",
+            team3: "Team Nairobi"
+          },
+          button:"BECOME OUR VOLUNTEER"
+        },
+        section4:{
+          tag:"Donors",
+          title:"Who Help",
+          subtitle:"Us"
+        }
       },
       events: {
         title: "Contact Us",
@@ -132,13 +175,56 @@ const translations = {
 
       },
 
-
       about: {
         title: "About Us",
-        content: "This is the about page content in English.",
+        banner: {
+          tag:"Treasures of hope",
+          title: "Über",
+          subtitle: "Organisation"
+        },
+        section1: {
+          tag: "Über uns",
+          title:"Help is Our",
+          subtitle:"Main Goal",
+          description1:" Treasures of hope",
+          description2:"Diese hilfsbedürftigen Menschen sollen auf vielfältige Weise unterstützt werden, damit sie wieder eine Arbeit finden und sich ein eigenes gesundes soziales Umfeld aufbauen können. So wird ihnen eine gute Lebensperspektive gegeben",
+          description3:"Darüber hinaus leistet der Verein weitere karitative Arbeit, hilft Tausend Menschen, alten oder kranken Menschen und unterstützt die Entwicklungszusammenarbeit mit Afrika.",
+        },
+        section2: {
+          title:"Unser Auftrag",
+          subtitle:"Wir arbeiten rund um den Globus, um Leben zu retten und Armut zu bekämpfen",
+          description:"Um so vielen Menschen wie möglich zu helfen, engagieren wir uns in zahlreichen Bereichen wie Bildung, Gesundheit usw."
+        },
+        section3: {
+          tag: "Was wir tun",
+          title: "Unser",
+          subtitle: "Statistik",
+          list_items: {
+            item1:"Jahre der Erfahrung",
+            item2:"Länder",
+            item3:"Hunderte von Menschen haben geholfen",
+            item4:"Gesammelte Dollars"
+          }
+        },
+        team_section:{
+          tag:"Team",
+          title:"Treffen Sie",
+          subtitle:"unser Team",
+          teams: {
+            team1: "Exekutivausschuss",
+            team2:"Team Uganda",
+            team3: "Team Nairobi"
+          },
+          button:"BECOME OUR VOLUNTEER"
+        },
+        section4:{
+          tag:"Spender",
+          title:"Wer hilft",
+          subtitle:"Wir"
+        }
       },
       events: {
-        title: "Contact Us",
+        title: "Kontakt",
         content: "This is the contact page content in English.",
       },
       causes: {
@@ -158,6 +244,8 @@ const translations = {
 
 
 const languageSelectop = document.getElementById("select")
+const languageSelecAbout = document.getElementById("about_select")
+
 
 // Home page elements
 
@@ -203,7 +291,47 @@ let section6_title = document.getElementById("section6_title")
 
 
 
+// About page elements
 
+let about_banner_tag = document.getElementById("about_banner_tag")
+let about_banner_title = document.getElementById("about_banner_title")
+let about_banner_subtitle = document.getElementById("about_banner_subtitle")
+
+
+let about_section1_tag = document.getElementById("about_section1_tag")
+let about_section1_title = document.getElementById("about_section1_title")
+let about_section1_subtitle = document.getElementById("about_section1_subtitle")
+let about_section1_description1 = document.getElementById("about_banner_tag")
+let about_section1_description2 = document.getElementById("about_section1_description2")
+let about_section1_description3 = document.getElementById("about_section1_description3")
+
+
+let about_section2_title = document.getElementById("about_section2_title")
+let about_section2_subtitle = document.getElementById("about_section2_subtitle")
+let about_section2_description = document.getElementById("about_section2_description")
+
+
+let about_section3_tag = document.getElementById("about_section3_tag")
+let about_section3_title = document.getElementById("about_section3_title")
+let about_section3_subtitle = document.getElementById("about_section3_subtitle")
+let about_section3_item1 = document.getElementById("about_section3_item1")
+let about_section3_item2 = document.getElementById("about_section3_item2")
+let about_section3_item3 = document.getElementById("about_section3_item3")
+let about_section3_item4 = document.getElementById("about_section3_item4")
+
+
+let about_teamSection_tag = document.getElementById("about_teamSection_tag")
+let about_teamSection_title = document.getElementById("about_teamSection_title")
+let about_teamSection_subtitle = document.getElementById("about_teamSection_subtitle")
+let about_teamSection_team1 = document.getElementById("about_teamSection_team1")
+let about_teamSection_team2 = document.getElementById("about_teamSection_team2")
+let about_teamSection_team3 = document.getElementById("about_teamSection_team3")
+let about_teamSection_button = document.getElementById("about_teamSection_button")
+
+
+let about_section4_tag = document.getElementById("about_section4_tag")
+let about_section4_title = document.getElementById("about_section4_title")
+let about_section4_subtitle = document.getElementById("about_section4_subtitle")
 
 
 
@@ -219,11 +347,21 @@ languageSelectop.addEventListener("change", (event) => {
     setLanguage(event.target.value)
 })
 
-console.log("test ", translations.en.home.banner.title)
+languageSelecAbout.addEventListener("change", (event) => {
+  setLanguageAbout(event.target.value)
+})
+
+
+// ------------------------------------------------------------------------------------------
+
+
 
 
 const setLanguage = (language) => {
     if(language=="en"){
+
+      // Home page
+
       banner_title.innerText = translations.en.home.banner.title
       banner_description.innerText = translations.en.home.banner.description
       banner_button.innerText = translations.en.home.banner.button
@@ -265,6 +403,8 @@ const setLanguage = (language) => {
       section6_title.innerText = translations.en.home.section6.title
       
     }else if(language == "de"){
+
+      // Home page 
       banner_title.innerText = translations.de.home.banner.title
       banner_description.innerText = translations.de.home.banner.description
       banner_button.innerText = translations.de.home.banner.button
@@ -304,5 +444,104 @@ const setLanguage = (language) => {
       
       
       section6_title.innerText = translations.de.home.section6.title
+
+    
     }
+}
+
+
+
+const setLanguageAbout = (language) => {
+  if(language=="en"){
+
+    // About page 
+
+    about_banner_tag.innerText = translations.en.about.banner.tag
+    about_banner_title.innerText = translations.en.about.banner.title
+    about_banner_subtitle.innerText = translations.en.about.banner.subtitle
+
+
+    about_section1_tag.innerText = translations.en.about.section1.tag
+    about_section1_title.innerText = translations.en.about.section1.title
+    about_section1_subtitle.innerText = translations.en.about.section1.subtitle
+    about_section1_description1.innerText = translations.en.about.section1.description1
+    about_section1_description2.innerText = translations.en.about.section1.description2
+    about_section1_description3.innerText = translations.en.about.section1.description3
+
+
+    about_section2_title.innerText = translations.en.about.section2.title
+    about_section2_subtitle.innerText = translations.en.about.section2.subtitle
+    about_section2_description.innerText = translations.en.about.section2.description
+
+
+    about_section3_tag.innerText = translations.en.about.section3.tag
+    about_section3_title.innerText = translations.en.about.section3.title
+    about_section3_subtitle.innerText = translations.en.about.section3.subtitle
+    about_section3_item1.innerText = translations.en.about.section3.list_items.item1
+    about_section3_item2.innerText = translations.en.about.section3.list_items.item2
+    about_section3_item3.innerText = translations.en.about.section3.list_items.item3
+    about_section3_item4.innerText = translations.en.about.section3.list_items.item4
+
+
+    about_teamSection_tag.innerText = translations.en.about.team_section.tag
+    about_teamSection_title.innerText = translations.en.about.team_section.title
+    about_teamSection_subtitle.innerText = translations.en.about.team_section.subtitle
+    about_teamSection_team1.innerText = translations.en.about.team_section.teams.team1
+    about_teamSection_team2.innerText = translations.en.about.team_section.teams.team2
+    about_teamSection_team3.innerText = translations.en.about.team_section.teams.team3
+    about_teamSection_button.innerText = translations.en.about.team_section.button
+
+
+    about_section4_tag.innerText = translations.en.about.section4.tag
+    about_section4_title.innerText = translations.en.about.section4.title
+    about_section4_subtitle.innerText = translations.en.about.section4.subtitle
+
+
+
+    
+  }else if(language == "de"){
+
+
+    // About page 
+
+    about_banner_tag.innerText = translations.de.about.banner.tag
+    about_banner_title.innerText = translations.de.about.banner.title
+    about_banner_subtitle.innerText = translations.de.about.banner.subtitle
+
+
+    about_section1_tag.innerText = translations.de.about.section1.tag
+    about_section1_title.innerText = translations.de.about.section1.title
+    about_section1_subtitle.innerText = translations.de.about.section1.subtitle
+    about_section1_description1.innerText = translations.de.about.section1.description1
+    about_section1_description2.innerText = translations.de.about.section1.description2
+    about_section1_description3.innerText = translations.de.about.section1.description3
+
+
+    about_section2_title.innerText = translations.de.about.section2.title
+    about_section2_subtitle.innerText = translations.de.about.section2.subtitle
+    about_section2_description.innerText = translations.de.about.section2.description
+
+
+    about_section3_tag.innerText = translations.de.about.section3.tag
+    about_section3_title.innerText = translations.de.about.section3.title
+    about_section3_subtitle.innerText = translations.de.about.section3.subtitle
+    about_section3_item1.innerText = translations.de.about.section3.list_items.item1
+    about_section3_item2.innerText = translations.de.about.section3.list_items.item2
+    about_section3_item3.innerText = translations.de.about.section3.list_items.item3
+    about_section3_item4.innerText = translations.de.about.section3.list_items.item4
+
+
+    about_teamSection_tag.innerText = translations.de.about.team_section.tag
+    about_teamSection_title.innerText = translations.de.about.team_section.title
+    about_teamSection_subtitle.innerText = translations.de.about.team_section.subtitle
+    about_teamSection_team1.innerText = translations.de.about.team_section.teams.team1
+    about_teamSection_team2.innerText = translations.de.about.team_section.teams.team2
+    about_teamSection_team3.innerText = translations.de.about.team_section.teams.team3
+    about_teamSection_button.innerText = translations.de.about.team_section.button
+
+
+    about_section4_tag.innerText = translations.de.about.section4.tag
+    about_section4_title.innerText = translations.de.about.section4.title
+    about_section4_subtitle.innerText = translations.de.about.section4.subtitle
+  }
 }

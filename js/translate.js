@@ -136,8 +136,8 @@ const translations = {
 
         section1: {
             tag: "Über uns",
-            title: "Die Mission von Treasures Of Hope ist",
-            subtitle: "Menschen im Not zu helfen",
+            title: "Die Mission Schätze ",
+            subtitle: "der Hoffnung hilft Menschen",
             description1: "Unser Verein wurde am 20. März 2023 in Köln, Deutschland, gegründet. Unsere Vision ist es, Kindern in Not und Menschen in Not zu helfen, ihr Leben durch effiziente Projekte zu verbessern, insbesondere in Ostafrika.",
             description2: "Wir unterstützen Waisenkinder und Kinder aus armen Verhältnissen, oft ermöglichen wir ihnen den Schulbesuch, damit sie eine Chance im Leben bekommen. Wir helfen auch Menschen, ihre medizinischen Kosten zu bezahlen, um ihr Leben zu verbessern. Außerdem unterstützen wir auch die ältere Generation, indem wir ihnen einmal pro Woche ein kleines Lebensmittelpaket kaufen.",
             button: "Mehr über"
@@ -189,9 +189,9 @@ const translations = {
         },
         section1: {
           tag: "Über uns",
-          title:"Help is Our",
-          subtitle:"Main Goal",
-          description1:" Treasures of hope",
+          title:"Hilfe ist unser",
+          subtitle:"Hauptziel",
+          description1:" Ziel von „Schätze der Hoffnung“ ist es, Obdachlosen und Kindern aus unterprivilegierten und finanziell schwachen Verhältnissen wohltätige Unterstützung zukommen zu lassen.",
           description2:"Diese hilfsbedürftigen Menschen sollen auf vielfältige Weise unterstützt werden, damit sie wieder eine Arbeit finden und sich ein eigenes gesundes soziales Umfeld aufbauen können. So wird ihnen eine gute Lebensperspektive gegeben",
           description3:"Darüber hinaus leistet der Verein weitere karitative Arbeit, hilft Tausend Menschen, alten oder kranken Menschen und unterstützt die Entwicklungszusammenarbeit mit Afrika.",
         },
@@ -381,7 +381,7 @@ const setLanguage = (language) => {
       section1_title.innerText =  translations.en.home.section1.title
       section1_subtitle.innerText = translations.en.home.section1.subtitle
       section1_description1.innerText = translations.en.home.section1.description1
-      section1_description2.innerText = translations.en.home.section1.tag
+      section1_description2.innerText = translations.en.home.section1.description12
       section1_bubtotn.innerText =  translations.en.home.section1.button
       
       
@@ -424,7 +424,7 @@ const setLanguage = (language) => {
       section1_title.innerText =  translations.de.home.section1.title
       section1_subtitle.innerText = translations.de.home.section1.subtitle
       section1_description1.innerText = translations.de.home.section1.description1
-      section1_description2.innerText = translations.de.home.section1.tag
+      section1_description2.innerText = translations.de.home.section1.description2
       section1_bubtotn.innerText =  translations.de.home.section1.button
       
       

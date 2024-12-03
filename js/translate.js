@@ -103,18 +103,23 @@ const translations = {
           subtitle:"Us"
         }
       },
-      events: {
-        title: "Contact Us",
-        content: "This is the contact page content in English.",
+      volunteer: {
+        banner: {
+          tag:"Treasures of hope",
+          title: "Become a Volunteer",
+        },
+        section1: {
+          tag: "What we Do",
+          title:"We Need Your Help",
+          description1:"At Treasures of Hope, we believe that every individual, regardless of age or circumstance, deserves a chance to thrive. Our mission is rooted in compassion and commitment, as we work tirelessly to support the most vulnerable members of our society—be it the destitute young children dreaming of a brighter future or the elderly who need assistance in navigating their daily lives.",
+          description2:"Together We Can Change Lives. Imagine the impact we can make together. Each day, we provide essential resources to those in need, helping them fulfill their basic needs. We empower youth by supporting their academic journeys and equipping them with job hunting skills and vocational training. Our programs are designed not only to uplift but to inspire, creating pathways for sustainable development and growth.",
+        },
+        section2: {
+          tag: "Fill Form and Beacame Volonteer",
+          title:"Complete the Form",
+          description:"At Treasures of Hope, we believe that every individual, regardless of age or circumstance, deserves a chance to thrive. Our mission is rooted in compassion and commitment, as we work tirelessly to support the most vulnerable members of our society—be it the destitute young children dreaming of a brighter future or the elderly who need assistance in navigating their daily lives.",
+          },
       },
-      causes: {
-        title: "Contact Us",
-        content: "This is the contact page content in English.",
-      },
-      contacts: {
-        title: "Contact Us",
-        content: "This is the contact page content in English.",
-      }
     },
 
 
@@ -223,18 +228,23 @@ const translations = {
           subtitle:"Wir"
         }
       },
-      events: {
-        title: "Kontakt",
-        content: "This is the contact page content in English.",
+      volunteer: {
+        banner: {
+          tag:"Treasures of hope",
+          title: "Werden Sie Freiwilliger",
+        },
+        section1: {
+          tag: "Was wir tun",
+          title:"Wir brauchen Ihre Hilfe",
+          description1:"Wir von Treasures of Hope sind der Meinung, dass jeder Mensch, unabhängig von seinem Alter oder seinen Lebensumständen, eine Chance verdient, sich zu entfalten. Unser Auftrag beruht auf Mitgefühl und Engagement. Wir arbeiten unermüdlich daran, die schwächsten Mitglieder unserer Gesellschaft zu unterstützen - seien es die mittellosen kleinen Kinder, die von einer besseren Zukunft träumen, oder die älteren Menschen, die Hilfe bei der Bewältigung ihres Alltags benötigen.",
+          description2:"Gemeinsam können wir Leben verändern. Stellen Sie sich die Wirkung vor, die wir gemeinsam erzielen können. Jeden Tag stellen wir den Bedürftigen wichtige Ressourcen zur Verfügung und helfen ihnen, ihre Grundbedürfnisse zu erfüllen. Wir fördern junge Menschen, indem wir sie in ihrer akademischen Laufbahn unterstützen und ihnen Fähigkeiten zur Arbeitssuche und Berufsausbildung vermitteln. Unsere Programme sollen nicht nur aufmuntern, sondern auch inspirieren und Wege für nachhaltige Entwicklung und Wachstum schaffen.",
+        },
+        section2: {
+          tag: "Formular ausfüllen und Volontär werden",
+          title:"Füllen Sie das Formular aus",
+          description:"Wir von Treasures of Hope sind davon überzeugt, dass jeder Mensch, unabhängig von seinem Alter oder seinen Lebensumständen, eine Chance verdient, sich zu entfalten. Unser Auftrag beruht auf Mitgefühl und Engagement, denn wir arbeiten unermüdlich daran, die schwächsten Mitglieder unserer Gesellschaft zu unterstützen - seien es mittellose Kinder, die von einer besseren Zukunft träumen, oder ältere Menschen, die Hilfe bei der Bewältigung ihres Alltags benötigen.",
+          },
       },
-      causes: {
-        title: "Contact Us",
-        content: "This is the contact page content in English.",
-      },
-      contacts: {
-        title: "Contact Us",
-        content: "This is the contact page content in English.",
-      }
     }
   };
 

@@ -245,6 +245,7 @@ const translations = {
           description:"Wir von Treasures of Hope sind davon überzeugt, dass jeder Mensch, unabhängig von seinem Alter oder seinen Lebensumständen, eine Chance verdient, sich zu entfalten. Unser Auftrag beruht auf Mitgefühl und Engagement, denn wir arbeiten unermüdlich daran, die schwächsten Mitglieder unserer Gesellschaft zu unterstützen - seien es mittellose Kinder, die von einer besseren Zukunft träumen, oder ältere Menschen, die Hilfe bei der Bewältigung ihres Alltags benötigen.",
           },
       },
+      
     }
   };
 

@@ -54,8 +54,6 @@ const translations = {
         },
 
       },
-
-
       about: {
         title: "About Us",
         banner: {
@@ -120,6 +118,30 @@ const translations = {
           title:"Complete the Form",
           description:"At Treasures of Hope, we believe that every individual, regardless of age or circumstance, deserves a chance to thrive. Our mission is rooted in compassion and commitment, as we work tirelessly to support the most vulnerable members of our society—be it the destitute young children dreaming of a brighter future or the elderly who need assistance in navigating their daily lives.",
           },
+      },
+      causes: {
+        banner: {
+          tag:"Treasures of hope",
+          title: "Our",
+          subtitle: "Causes",
+        },
+        list_causes:{
+          cause1:{
+            tag: "Assistace",
+            title:"We help those in need",
+            description:"Our mission is to offer practical support to the most vulnerable communities, whether it's providing essential resources, emergency shelter or psychological help. With your support, we can make a real difference in the lives of those going through difficult times.",
+          },
+          cause2:{
+            tag: "Medecine",
+            title:"Health in other Countries",
+            description:"In many parts of the world, access to healthcare remains a luxury. We are working to change this by supporting medical programs, training local healthcare staff and providing vital equipment. Through our actions, we save lives and restore hope to those who suffer in oblivion.",
+          },
+          cause3:{
+            tag: "Education",
+            title:"We Build and Create",
+            description:"Education is the key to a better future. We work to make education accessible to children and young adults in the most disadvantaged areas. By building schools, training teachers and providing teaching materials, we give every child the chance to realize his or her potential and contribute to a fairer world.",
+          },
+        }
       },
     },
 
@@ -247,6 +269,31 @@ const translations = {
           },
       },
 
+      causes: {
+        banner: {
+          tag:"Treasures of hope",
+          title: "Unser",
+          subtitle: "Anliegen",
+        },
+        list_causes:{
+          cause1:{
+            tag: "Unterstützung",
+            title:"Wir helfen den Bedürftigen",
+            description:"Unsere Aufgabe ist es, den am stärksten gefährdeten Bevölkerungsgruppen praktische Unterstützung zu bieten, sei es durch die Bereitstellung von wichtigen Ressourcen, Notunterkünften oder psychologischer Hilfe. Mit Ihrer Unterstützung können wir das Leben derer, die eine schwierige Zeit durchmachen, wirklich verbessern.",
+          },
+          cause2:{
+            tag: "Medizin",
+            title:"Gesundheit in anderen Ländern",
+            description:"In vielen Teilen der Welt bleibt der Zugang zur Gesundheitsversorgung ein Luxus. Wir arbeiten daran, dies zu ändern, indem wir medizinische Programme unterstützen, lokales Gesundheitspersonal schulen und lebenswichtige Ausrüstung bereitstellen. Durch unsere Maßnahmen retten wir Leben und geben denjenigen, die in Vergessenheit geraten sind, wieder Hoffnung.",
+          },
+          cause3:{
+            tag: "Bildung",
+            title:"Wir bauen und schaffen",
+            description:"Bildung ist der Schlüssel zu einer besseren Zukunft. Wir arbeiten daran, Kindern und jungen Erwachsenen in den am stärksten benachteiligten Gebieten den Zugang zu Bildung zu ermöglichen. Durch den Bau von Schulen, die Ausbildung von Lehrern und die Bereitstellung von Lehrmaterial geben wir jedem Kind die Chance, sein Potenzial zu entfalten und zu einer gerechteren Welt beizutragen.",
+          },
+        }
+      },
+
     }
   };
 
@@ -257,6 +304,8 @@ const translations = {
 
 const languageSelectop = document.getElementById("select")
 const languageSelecAbout = document.getElementById("about_select")
+const languageSelectVolunteer = document.getElementById("volunteer_select")
+const languageSelectCauses = document.getElementById("causes_select")
 
 
 // Home page elements
@@ -346,23 +395,66 @@ let about_section4_title = document.getElementById("about_section4_title")
 let about_section4_subtitle = document.getElementById("about_section4_subtitle")
 
 
+// Volunteer elements
+
+let volunteer_banner_tag = document.getElementById("volunteer_banner_tag")
+let volunteer_banner_title = document.getElementById("volunteer_banner_title")
+let volunteer_banner_subtitle = document.getElementById("volunteer_banner_subtitle")
 
 
+let volunteer_section1_tag = document.getElementById("volunteer_section1_tag")
+let volunteer_section1_title = document.getElementById("volunteer_section1_title")
+let volunteer_section1_subtitle = document.getElementById("volunteer_section1_subtitle")
+let volunteer_section1_description1 = document.getElementById("volunteer_section1_description1")
+let volunteer_section1_description2 = document.getElementById("volunteer_section1_description2")
 
-console.log("test ", translations.de.about.banner.tag)
+
+let volunteer_section2_title = document.getElementById("volunteer_section2_title")
+let volunteer_section2_subtitle = document.getElementById("volunteer_section2_subtitle")
+let volunteer_section2_description = document.getElementById("volunteer_section2_description1")
+
+
+// Volunteer elements
+
+let causes_banner_tag = document.getElementById("causes_banner_tag")
+let causes_banner_title = document.getElementById("causes_banner_title")
+let causes_banner_subtitle = document.getElementById("causes_banner_subtitle")
+
+
+let cause1_tag = document.getElementById("cause1_tag")
+let cause1_title = document.getElementById("cause1_title")
+let cause1_description = document.getElementById("cause1_description")
+
+let cause2_tag = document.getElementById("cause2_tag")
+let cause2_title = document.getElementById("cause2_title")
+let cause2_description = document.getElementById("cause2_description")
+
+
+let cause3_tag = document.getElementById("cause3_tag")
+let cause3_title = document.getElementById("cause3_title")
+let cause3_description = document.getElementById("cause3_description")
+
+
 
 
 
 // ------------------------------------------------------------------------------------------
 
-languageSelectop.addEventListener("change", (event) => {
-    setLanguage(event.target.value)
-})
+// languageSelectop.addEventListener("change", (event) => {
+//     setLanguage(event.target.value)
+// })
 
-languageSelecAbout.addEventListener("change", (event) => {
-  setLanguageAbout(event.target.value)
-})
+// languageSelecAbout.addEventListener("change", (event) => {
+//   setLanguageAbout(event.target.value)
+// })
 
+// languageSelectVolunteer.addEventListener("change", (event) => {
+//   setLanguageVolunteer(event.target.value)
+// })
+
+languageSelectCauses.addEventListener("change", (event) => {
+  setLanguageCauses(event.target.value)
+})
 
 // ------------------------------------------------------------------------------------------
 
@@ -555,5 +647,107 @@ const setLanguageAbout = (language) => {
     about_section4_tag.innerText = translations.de.about.section4.tag
     about_section4_title.innerText = translations.de.about.section4.title
     about_section4_subtitle.innerText = translations.de.about.section4.subtitle
+  }
+}
+
+
+
+const setLanguageVolunteer = (language) => {
+  if(language=="en"){
+
+    // Volunteer page 
+
+    volunteer_banner_tag.innerText = translations.en.volunteer.banner.tag
+    volunteer_banner_title.innerText = translations.en.volunteer.banner.title
+    volunteer_banner_subtitle.innerText = translations.en.volunteer.banner.subtitle
+
+
+    volunteer_section1_tag.innerText = translations.en.volunteer.section1.tag
+    volunteer_section1_title.innerText = translations.en.volunteer.section1.title
+    volunteer_section1_subtitle.innerText = translations.en.volunteer.section1.subtitle
+    volunteer_section1_description1.innerText = translations.en.volunteer.section1.description1
+    volunteer_section1_description2.innerText = translations.en.volunteer.section1.description2
+ 
+
+
+    volunteer_section2_title.innerText = translations.en.volunteer.section2.title
+    volunteer_section2_subtitle.innerText = translations.en.volunteer.section2.subtitle
+    volunteer_section2_description.innerText = translations.en.volunteer.section2.description
+
+
+    
+  }else if(language == "de"){
+
+
+    // Volunteer page 
+
+    volunteer_banner_tag.innerText = translations.de.volunteer.banner.tag
+    volunteer_banner_title.innerText = translations.de.volunteer.banner.title
+    volunteer_banner_subtitle.innerText = translations.de.volunteer.banner.subtitle
+
+
+    volunteer_section1_tag.innerText = translations.de.volunteer.section1.tag
+    volunteer_section1_title.innerText = translations.de.volunteer.section1.title
+    volunteer_section1_subtitle.innerText = translations.de.volunteer.section1.subtitle
+    volunteer_section1_description1.innerText = translations.de.volunteer.section1.description1
+    volunteer_section1_description2.innerText = translations.de.volunteer.section1.description2
+ 
+
+
+    volunteer_section2_title.innerText = translations.de.volunteer.section2.title
+    volunteer_section2_subtitle.innerText = translations.de.volunteer.section2.subtitle
+    volunteer_section2_description.innerText = translations.de.volunteer.section2.description
+
+  }
+}
+
+console.log("test ", translations.de.causes.list_causes.cause1.tag)
+
+const setLanguageCauses = (language) => {
+  if(language=="en"){
+
+    // Causes page 
+
+    causes_banner_tag.innerText = translations.en.causes.banner.tag
+    causes_banner_title.innerText = translations.en.causes.banner.title
+    causes_banner_subtitle.innerText = translations.en.causes.banner.subtitle
+
+
+    cause1_tag.innerText = translations.en.causes.list_causes.cause1.tag
+    cause1_title.innerText = translations.en.causes.list_causes.cause1.title
+    cause1_description.innerText = translations.en.causes.list_causes.cause1.description
+
+    cause2_tag.innerText = translations.en.causes.list_causes.cause2.tag
+    cause2_title.innerText = translations.en.causes.list_causes.cause2.title
+    cause2_description.innerText = translations.en.causes.list_causes.cause2.description
+
+    cause3_tag.innerText = translations.en.causes.list_causes.cause3.tag
+    cause3_title.innerText = translations.en.causes.list_causes.cause3.title
+    cause3_description.innerText = translations.en.causes.list_causes.cause3.description
+
+
+    
+  }else if(language == "de"){
+
+
+    // Causes page 
+
+    causes_banner_tag.innerText = translations.de.causes.banner.tag
+    causes_banner_title.innerText = translations.de.causes.banner.title
+    causes_banner_subtitle.innerText = translations.de.causes.banner.subtitle
+
+
+    cause1_tag.innerText = translations.de.causes.list_causes.cause1.tag
+    cause1_title.innerText = translations.de.causes.list_causes.cause1.title
+    cause1_description.innerText = translations.de.causes.list_causes.cause1.description
+
+    cause2_tag.innerText = translations.de.causes.list_causes.cause2.tag
+    cause2_title.innerText = translations.de.causes.list_causes.cause2.title
+    cause2_description.innerText = translations.de.causes.list_causes.cause2.description
+
+    cause3_tag.innerText = translations.de.causes.list_causes.cause3.tag
+    cause3_title.innerText = translations.de.causes.list_causes.cause3.title
+    cause3_description.innerText = translations.de.causes.list_causes.cause3.description
+
   }
 }

@@ -302,137 +302,20 @@ const translations = {
 
 
 
-const languageSelectop = document.getElementById("select")
-const languageSelecAbout = document.getElementById("about_select")
-const languageSelectVolunteer = document.getElementById("volunteer_select")
+
+
 const languageSelectCauses = document.getElementById("causes_select")
 
 
-// Home page elements
-
-let banner_title = document.getElementById("banner_title")
-let banner_description = document.getElementById("banner_description")
-let banner_button = document.getElementById("banner_button")
-
-
-let section1_tag = document.getElementById("section1_tag")
-let section1_title = document.getElementById("section1_title")
-let section1_subtitle= document.getElementById("section1_subtitle")
-let section1_description1 = document.getElementById("section1_description1")
-let section1_description2 = document.getElementById("section1_description2")
-let section1_bubtotn = document.getElementById("section1_bubtotn")
-
-
-let section2_tag = document.getElementById("section2_tag")
-let section2_title = document.getElementById("section2_title")
-let section2_subtitle = document.getElementById("section2_subtitle")
-let section2_description = document.getElementById("section2_description")
-let section2_bubtotn = document.getElementById("section2_bubtotn")
-
-
-let section3_tag = document.getElementById("section3_tag")
-let section3_title = document.getElementById("section3_title")
-let section3_subtitle = document.getElementById("section3_subtitle")
-let section3_description = document.getElementById("section3_description")
-
-
-let section4_tag = document.getElementById("section4_tag")
-let section4_title = document.getElementById("section4_title")
-let section4_subtitle = document.getElementById("section4_subtitle")
-let section4_description = document.getElementById("section4_description")
-let section4_bubtotn = document.getElementById("section4_bubtotn")
-
-
-let section5_tag = document.getElementById("section5_tag")
-let section5_title = document.getElementById("section5_title")
-let section5_subtitle = document.getElementById("section5_subtitle")
-
-
-let section6_title = document.getElementById("section6_title")
 
 
 
-// About page elements
-
-let about_banner_tag = document.getElementById("about_banner_tag")
-let about_banner_title = document.getElementById("about_banner_title")
-let about_banner_subtitle = document.getElementById("about_banner_subtitle")
 
 
-let about_section1_tag = document.getElementById("about_section1_tag")
-let about_section1_title = document.getElementById("about_section1_title")
-let about_section1_subtitle = document.getElementById("about_section1_subtitle")
-let about_section1_description1 = document.getElementById("about_section1_description1")
-let about_section1_description2 = document.getElementById("about_section1_description2")
-let about_section1_description3 = document.getElementById("about_section1_description3")
 
 
-let about_section2_title = document.getElementById("about_section2_title")
-let about_section2_subtitle = document.getElementById("about_section2_subtitle")
-let about_section2_description = document.getElementById("about_section2_description")
 
 
-let about_section3_tag = document.getElementById("about_section3_tag")
-let about_section3_title = document.getElementById("about_section3_title")
-let about_section3_subtitle = document.getElementById("about_section3_subtitle")
-let about_section3_item1 = document.getElementById("about_section3_item1")
-let about_section3_item2 = document.getElementById("about_section3_item2")
-let about_section3_item3 = document.getElementById("about_section3_item3")
-let about_section3_item4 = document.getElementById("about_section3_item4")
-
-
-let about_teamSection_tag = document.getElementById("about_teamSection_tag")
-let about_teamSection_title = document.getElementById("about_teamSection_title")
-let about_teamSection_subtitle = document.getElementById("about_teamSection_subtitle")
-let about_teamSection_team1 = document.getElementById("about_teamSection_team1")
-let about_teamSection_team2 = document.getElementById("about_teamSection_team2")
-let about_teamSection_team3 = document.getElementById("about_teamSection_team3")
-let about_teamSection_button = document.getElementById("about_teamSection_button")
-
-
-let about_section4_tag = document.getElementById("about_section4_tag")
-let about_section4_title = document.getElementById("about_section4_title")
-let about_section4_subtitle = document.getElementById("about_section4_subtitle")
-
-
-// Volunteer elements
-
-let volunteer_banner_tag = document.getElementById("volunteer_banner_tag")
-let volunteer_banner_title = document.getElementById("volunteer_banner_title")
-let volunteer_banner_subtitle = document.getElementById("volunteer_banner_subtitle")
-
-
-let volunteer_section1_tag = document.getElementById("volunteer_section1_tag")
-let volunteer_section1_title = document.getElementById("volunteer_section1_title")
-let volunteer_section1_subtitle = document.getElementById("volunteer_section1_subtitle")
-let volunteer_section1_description1 = document.getElementById("volunteer_section1_description1")
-let volunteer_section1_description2 = document.getElementById("volunteer_section1_description2")
-
-
-let volunteer_section2_title = document.getElementById("volunteer_section2_title")
-let volunteer_section2_subtitle = document.getElementById("volunteer_section2_subtitle")
-let volunteer_section2_description = document.getElementById("volunteer_section2_description1")
-
-
-// Volunteer elements
-
-let causes_banner_tag = document.getElementById("causes_banner_tag")
-let causes_banner_title = document.getElementById("causes_banner_title")
-let causes_banner_subtitle = document.getElementById("causes_banner_subtitle")
-
-
-let cause1_tag = document.getElementById("cause1_tag")
-let cause1_title = document.getElementById("cause1_title")
-let cause1_description = document.getElementById("cause1_description")
-
-let cause2_tag = document.getElementById("cause2_tag")
-let cause2_title = document.getElementById("cause2_title")
-let cause2_description = document.getElementById("cause2_description")
-
-
-let cause3_tag = document.getElementById("cause3_tag")
-let cause3_title = document.getElementById("cause3_title")
-let cause3_description = document.getElementById("cause3_description")
 
 
 
@@ -461,194 +344,194 @@ languageSelectCauses.addEventListener("change", (event) => {
 
 
 
-const setLanguage = (language) => {
-    if(language=="en"){
+// const setLanguage = (language) => {
+//     if(language=="en"){
 
-      // Home page
+//       // Home page
 
-      banner_title.innerText = translations.en.home.banner.title
-      banner_description.innerText = translations.en.home.banner.description
-      banner_button.innerText = translations.en.home.banner.button
+//       banner_title.innerText = translations.en.home.banner.title
+//       banner_description.innerText = translations.en.home.banner.description
+//       banner_button.innerText = translations.en.home.banner.button
       
       
-      section1_tag.innerText =  translations.en.home.section1.tag
-      section1_title.innerText =  translations.en.home.section1.title
-      section1_subtitle.innerText = translations.en.home.section1.subtitle
-      section1_description1.innerText = translations.en.home.section1.description1
-      section1_description2.innerText = translations.en.home.section1.description2
-      section1_bubtotn.innerText =  translations.en.home.section1.button
+//       section1_tag.innerText =  translations.en.home.section1.tag
+//       section1_title.innerText =  translations.en.home.section1.title
+//       section1_subtitle.innerText = translations.en.home.section1.subtitle
+//       section1_description1.innerText = translations.en.home.section1.description1
+//       section1_description2.innerText = translations.en.home.section1.description2
+//       section1_bubtotn.innerText =  translations.en.home.section1.button
       
       
-      section2_tag.innerText = translations.en.home.section2.tag
-      section2_title.innerText = translations.en.home.section2.title
-      section2_subtitle.innerText = translations.en.home.section2.subtitle
-      section2_description.innerText = translations.en.home.section2.description
-      section2_bubtotn.innerText = translations.en.home.section2.button
+//       section2_tag.innerText = translations.en.home.section2.tag
+//       section2_title.innerText = translations.en.home.section2.title
+//       section2_subtitle.innerText = translations.en.home.section2.subtitle
+//       section2_description.innerText = translations.en.home.section2.description
+//       section2_bubtotn.innerText = translations.en.home.section2.button
       
       
-      section3_tag.innerText = translations.en.home.section3.tag
-      section3_title.innerText = translations.en.home.section3.title
-      section3_subtitle.innerText = translations.en.home.section3.subtitle
-      section3_description.innerText = translations.en.home.section3.description
+//       section3_tag.innerText = translations.en.home.section3.tag
+//       section3_title.innerText = translations.en.home.section3.title
+//       section3_subtitle.innerText = translations.en.home.section3.subtitle
+//       section3_description.innerText = translations.en.home.section3.description
       
       
-      section4_tag.innerText = translations.en.home.section4.tag
-      section4_title.innerText = translations.en.home.section4.title
-      section4_subtitle.innerText = translations.en.home.section4.subtitle
-      section4_description.innerText = translations.en.home.section4.description
-      section4_bubtotn.innerText = translations.en.home.section4.button
+//       section4_tag.innerText = translations.en.home.section4.tag
+//       section4_title.innerText = translations.en.home.section4.title
+//       section4_subtitle.innerText = translations.en.home.section4.subtitle
+//       section4_description.innerText = translations.en.home.section4.description
+//       section4_bubtotn.innerText = translations.en.home.section4.button
       
       
-      section5_tag.innerText = translations.en.home.section5.tag
-      section5_title.innerText = translations.en.home.section5.title
-      section5_subtitle.innerText = translations.en.home.section5.subtitle
+//       section5_tag.innerText = translations.en.home.section5.tag
+//       section5_title.innerText = translations.en.home.section5.title
+//       section5_subtitle.innerText = translations.en.home.section5.subtitle
       
       
-      section6_title.innerText = translations.en.home.section6.title
+//       section6_title.innerText = translations.en.home.section6.title
       
-    }else if(language == "de"){
+//     }else if(language == "de"){
 
-      // Home page 
-      banner_title.innerText = translations.de.home.banner.title
-      banner_description.innerText = translations.de.home.banner.description
-      banner_button.innerText = translations.de.home.banner.button
+//       // Home page 
+//       banner_title.innerText = translations.de.home.banner.title
+//       banner_description.innerText = translations.de.home.banner.description
+//       banner_button.innerText = translations.de.home.banner.button
       
       
-      section1_tag.innerText =  translations.de.home.section1.tag
-      section1_title.innerText =  translations.de.home.section1.title
-      section1_subtitle.innerText = translations.de.home.section1.subtitle
-      section1_description1.innerText = translations.de.home.section1.description1
-      section1_description2.innerText = translations.de.home.section1.description2
-      section1_bubtotn.innerText =  translations.de.home.section1.button
+//       section1_tag.innerText =  translations.de.home.section1.tag
+//       section1_title.innerText =  translations.de.home.section1.title
+//       section1_subtitle.innerText = translations.de.home.section1.subtitle
+//       section1_description1.innerText = translations.de.home.section1.description1
+//       section1_description2.innerText = translations.de.home.section1.description2
+//       section1_bubtotn.innerText =  translations.de.home.section1.button
       
       
-      section2_tag.innerText = translations.de.home.section2.tag
-      section2_title.innerText = translations.de.home.section2.title
-      section2_subtitle.innerText = translations.de.home.section2.subtitle
-      section2_description.innerText = translations.de.home.section2.description
-      section2_bubtotn.innerText = translations.de.home.section2.button
+//       section2_tag.innerText = translations.de.home.section2.tag
+//       section2_title.innerText = translations.de.home.section2.title
+//       section2_subtitle.innerText = translations.de.home.section2.subtitle
+//       section2_description.innerText = translations.de.home.section2.description
+//       section2_bubtotn.innerText = translations.de.home.section2.button
       
       
-      section3_tag.innerText = translations.de.home.section3.tag
-      section3_title.innerText = translations.de.home.section3.title
-      section3_subtitle.innerText = translations.de.home.section3.subtitle
-      section3_description.innerText = translations.de.home.section3.description
+//       section3_tag.innerText = translations.de.home.section3.tag
+//       section3_title.innerText = translations.de.home.section3.title
+//       section3_subtitle.innerText = translations.de.home.section3.subtitle
+//       section3_description.innerText = translations.de.home.section3.description
       
       
-      section4_tag.innerText = translations.de.home.section4.tag
-      section4_title.innerText = translations.de.home.section4.title
-      section4_subtitle.innerText = translations.de.home.section4.subtitle
-      section4_description.innerText = translations.de.home.section4.description
-      section4_bubtotn.innerText = translations.de.home.section4.button
+//       section4_tag.innerText = translations.de.home.section4.tag
+//       section4_title.innerText = translations.de.home.section4.title
+//       section4_subtitle.innerText = translations.de.home.section4.subtitle
+//       section4_description.innerText = translations.de.home.section4.description
+//       section4_bubtotn.innerText = translations.de.home.section4.button
       
       
-      section5_tag.innerText = translations.de.home.section5.tag
-      section5_title.innerText = translations.de.home.section5.title
-      section5_subtitle.innerText = translations.de.home.section5.subtitle
+//       section5_tag.innerText = translations.de.home.section5.tag
+//       section5_title.innerText = translations.de.home.section5.title
+//       section5_subtitle.innerText = translations.de.home.section5.subtitle
       
       
-      section6_title.innerText = translations.de.home.section6.title
+//       section6_title.innerText = translations.de.home.section6.title
 
     
-    }
-}
+//     }
+// }
 
 
 
-const setLanguageAbout = (language) => {
-  if(language=="en"){
+// const setLanguageAbout = (language) => {
+//   if(language=="en"){
 
-    // About page 
+//     // About page 
 
-    about_banner_tag.innerText = translations.en.about.banner.tag
-    about_banner_title.innerText = translations.en.about.banner.title
-    about_banner_subtitle.innerText = translations.en.about.banner.subtitle
-
-
-    about_section1_tag.innerText = translations.en.about.section1.tag
-    about_section1_title.innerText = translations.en.about.section1.title
-    about_section1_subtitle.innerText = translations.en.about.section1.subtitle
-    about_section1_description1.innerText = translations.en.about.section1.description1
-    about_section1_description2.innerText = translations.en.about.section1.description2
-    about_section1_description3.innerText = translations.en.about.section1.description3
+//     about_banner_tag.innerText = translations.en.about.banner.tag
+//     about_banner_title.innerText = translations.en.about.banner.title
+//     about_banner_subtitle.innerText = translations.en.about.banner.subtitle
 
 
-    about_section2_title.innerText = translations.en.about.section2.title
-    about_section2_subtitle.innerText = translations.en.about.section2.subtitle
-    about_section2_description.innerText = translations.en.about.section2.description
+//     about_section1_tag.innerText = translations.en.about.section1.tag
+//     about_section1_title.innerText = translations.en.about.section1.title
+//     about_section1_subtitle.innerText = translations.en.about.section1.subtitle
+//     about_section1_description1.innerText = translations.en.about.section1.description1
+//     about_section1_description2.innerText = translations.en.about.section1.description2
+//     about_section1_description3.innerText = translations.en.about.section1.description3
 
 
-    about_section3_tag.innerText = translations.en.about.section3.tag
-    about_section3_title.innerText = translations.en.about.section3.title
-    about_section3_subtitle.innerText = translations.en.about.section3.subtitle
-    about_section3_item1.innerText = translations.en.about.section3.list_items.item1
-    about_section3_item2.innerText = translations.en.about.section3.list_items.item2
-    about_section3_item3.innerText = translations.en.about.section3.list_items.item3
-    about_section3_item4.innerText = translations.en.about.section3.list_items.item4
+//     about_section2_title.innerText = translations.en.about.section2.title
+//     about_section2_subtitle.innerText = translations.en.about.section2.subtitle
+//     about_section2_description.innerText = translations.en.about.section2.description
 
 
-    about_teamSection_tag.innerText = translations.en.about.team_section.tag
-    about_teamSection_title.innerText = translations.en.about.team_section.title
-    about_teamSection_subtitle.innerText = translations.en.about.team_section.subtitle
-    about_teamSection_team1.innerText = translations.en.about.team_section.teams.team1
-    about_teamSection_team2.innerText = translations.en.about.team_section.teams.team2
-    about_teamSection_team3.innerText = translations.en.about.team_section.teams.team3
-    about_teamSection_button.innerText = translations.en.about.team_section.button
+//     about_section3_tag.innerText = translations.en.about.section3.tag
+//     about_section3_title.innerText = translations.en.about.section3.title
+//     about_section3_subtitle.innerText = translations.en.about.section3.subtitle
+//     about_section3_item1.innerText = translations.en.about.section3.list_items.item1
+//     about_section3_item2.innerText = translations.en.about.section3.list_items.item2
+//     about_section3_item3.innerText = translations.en.about.section3.list_items.item3
+//     about_section3_item4.innerText = translations.en.about.section3.list_items.item4
 
 
-    about_section4_tag.innerText = translations.en.about.section4.tag
-    about_section4_title.innerText = translations.en.about.section4.title
-    about_section4_subtitle.innerText = translations.en.about.section4.subtitle
+//     about_teamSection_tag.innerText = translations.en.about.team_section.tag
+//     about_teamSection_title.innerText = translations.en.about.team_section.title
+//     about_teamSection_subtitle.innerText = translations.en.about.team_section.subtitle
+//     about_teamSection_team1.innerText = translations.en.about.team_section.teams.team1
+//     about_teamSection_team2.innerText = translations.en.about.team_section.teams.team2
+//     about_teamSection_team3.innerText = translations.en.about.team_section.teams.team3
+//     about_teamSection_button.innerText = translations.en.about.team_section.button
+
+
+//     about_section4_tag.innerText = translations.en.about.section4.tag
+//     about_section4_title.innerText = translations.en.about.section4.title
+//     about_section4_subtitle.innerText = translations.en.about.section4.subtitle
 
 
 
     
-  }else if(language == "de"){
+//   }else if(language == "de"){
 
 
-    // About page 
+//     // About page 
 
-    about_banner_tag.innerText = translations.de.about.banner.tag
-    about_banner_title.innerText = translations.de.about.banner.title
-    about_banner_subtitle.innerText = translations.de.about.banner.subtitle
-
-
-    about_section1_tag.innerText = translations.de.about.section1.tag
-    about_section1_title.innerText = translations.de.about.section1.title
-    about_section1_subtitle.innerText = translations.de.about.section1.subtitle
-    about_section1_description1.innerText = translations.de.about.section1.description1
-    about_section1_description2.innerText = translations.de.about.section1.description2
-    about_section1_description3.innerText = translations.de.about.section1.description3
+//     about_banner_tag.innerText = translations.de.about.banner.tag
+//     about_banner_title.innerText = translations.de.about.banner.title
+//     about_banner_subtitle.innerText = translations.de.about.banner.subtitle
 
 
-    about_section2_title.innerText = translations.de.about.section2.title
-    about_section2_subtitle.innerText = translations.de.about.section2.subtitle
-    about_section2_description.innerText = translations.de.about.section2.description
+//     about_section1_tag.innerText = translations.de.about.section1.tag
+//     about_section1_title.innerText = translations.de.about.section1.title
+//     about_section1_subtitle.innerText = translations.de.about.section1.subtitle
+//     about_section1_description1.innerText = translations.de.about.section1.description1
+//     about_section1_description2.innerText = translations.de.about.section1.description2
+//     about_section1_description3.innerText = translations.de.about.section1.description3
 
 
-    about_section3_tag.innerText = translations.de.about.section3.tag
-    about_section3_title.innerText = translations.de.about.section3.title
-    about_section3_subtitle.innerText = translations.de.about.section3.subtitle
-    about_section3_item1.innerText = translations.de.about.section3.list_items.item1
-    about_section3_item2.innerText = translations.de.about.section3.list_items.item2
-    about_section3_item3.innerText = translations.de.about.section3.list_items.item3
-    about_section3_item4.innerText = translations.de.about.section3.list_items.item4
+//     about_section2_title.innerText = translations.de.about.section2.title
+//     about_section2_subtitle.innerText = translations.de.about.section2.subtitle
+//     about_section2_description.innerText = translations.de.about.section2.description
 
 
-    about_teamSection_tag.innerText = translations.de.about.team_section.tag
-    about_teamSection_title.innerText = translations.de.about.team_section.title
-    about_teamSection_subtitle.innerText = translations.de.about.team_section.subtitle
-    about_teamSection_team1.innerText = translations.de.about.team_section.teams.team1
-    about_teamSection_team2.innerText = translations.de.about.team_section.teams.team2
-    about_teamSection_team3.innerText = translations.de.about.team_section.teams.team3
-    about_teamSection_button.innerText = translations.de.about.team_section.button
+//     about_section3_tag.innerText = translations.de.about.section3.tag
+//     about_section3_title.innerText = translations.de.about.section3.title
+//     about_section3_subtitle.innerText = translations.de.about.section3.subtitle
+//     about_section3_item1.innerText = translations.de.about.section3.list_items.item1
+//     about_section3_item2.innerText = translations.de.about.section3.list_items.item2
+//     about_section3_item3.innerText = translations.de.about.section3.list_items.item3
+//     about_section3_item4.innerText = translations.de.about.section3.list_items.item4
 
 
-    about_section4_tag.innerText = translations.de.about.section4.tag
-    about_section4_title.innerText = translations.de.about.section4.title
-    about_section4_subtitle.innerText = translations.de.about.section4.subtitle
-  }
-}
+//     about_teamSection_tag.innerText = translations.de.about.team_section.tag
+//     about_teamSection_title.innerText = translations.de.about.team_section.title
+//     about_teamSection_subtitle.innerText = translations.de.about.team_section.subtitle
+//     about_teamSection_team1.innerText = translations.de.about.team_section.teams.team1
+//     about_teamSection_team2.innerText = translations.de.about.team_section.teams.team2
+//     about_teamSection_team3.innerText = translations.de.about.team_section.teams.team3
+//     about_teamSection_button.innerText = translations.de.about.team_section.button
+
+
+//     about_section4_tag.innerText = translations.de.about.section4.tag
+//     about_section4_title.innerText = translations.de.about.section4.title
+//     about_section4_subtitle.innerText = translations.de.about.section4.subtitle
+//   }
+// }
 
 
 

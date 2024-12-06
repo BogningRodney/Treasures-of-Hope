@@ -68,6 +68,7 @@ const translations = {
           title:"Help is Our",
           subtitle:"Main Goal",
           description1:"Treasures of hope",
+          description2:"Treasures of hope",
           description3:"Futhermore, the association is doing other charitable work, helping Thousand People Helped old or sick people, and it supports development cooperation with Africa.",
         },
         section2: {
@@ -245,7 +246,7 @@ const translations = {
           description:"Wir von Treasures of Hope sind davon überzeugt, dass jeder Mensch, unabhängig von seinem Alter oder seinen Lebensumständen, eine Chance verdient, sich zu entfalten. Unser Auftrag beruht auf Mitgefühl und Engagement, denn wir arbeiten unermüdlich daran, die schwächsten Mitglieder unserer Gesellschaft zu unterstützen - seien es mittellose Kinder, die von einer besseren Zukunft träumen, oder ältere Menschen, die Hilfe bei der Bewältigung ihres Alltags benötigen.",
           },
       },
-      
+
     }
   };
 
@@ -312,7 +313,7 @@ let about_banner_subtitle = document.getElementById("about_banner_subtitle")
 let about_section1_tag = document.getElementById("about_section1_tag")
 let about_section1_title = document.getElementById("about_section1_title")
 let about_section1_subtitle = document.getElementById("about_section1_subtitle")
-let about_section1_description1 = document.getElementById("about_banner_tag")
+let about_section1_description1 = document.getElementById("about_section1_description1")
 let about_section1_description2 = document.getElementById("about_section1_description2")
 let about_section1_description3 = document.getElementById("about_section1_description3")
 
@@ -348,7 +349,7 @@ let about_section4_subtitle = document.getElementById("about_section4_subtitle")
 
 
 
-
+console.log("test ", translations.de.about.banner.tag)
 
 
 
@@ -382,7 +383,7 @@ const setLanguage = (language) => {
       section1_title.innerText =  translations.en.home.section1.title
       section1_subtitle.innerText = translations.en.home.section1.subtitle
       section1_description1.innerText = translations.en.home.section1.description1
-      section1_description2.innerText = translations.en.home.section1.description12
+      section1_description2.innerText = translations.en.home.section1.description2
       section1_bubtotn.innerText =  translations.en.home.section1.button
       
       
